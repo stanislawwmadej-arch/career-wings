@@ -8,14 +8,14 @@ nie_zdan = []
 najlepsi = []
 najwięcej = 0
 najlepszy = ()
-for student, punkty in punkty.items():
-    if punkty <= 45:
+for student, wynik in punkty.items():
+    if wynik <= 45:
         nie_zdan.append(student)
-    elif punkty >= 91:
+    elif wynik >= 91:
         najlepsi.append(student)
-    if punkty > najwięcej:
-        najwięcej = punkty
-        najlepszy = (student, punkty)
+    if wynik > najwięcej:
+        najwięcej = wynik
+        najlepszy = (student, wynik)
 
 print(f"Nie zdali: {nie_zdan}")
 print(f"Najlepsi okazali się: {najlepsi}") 
