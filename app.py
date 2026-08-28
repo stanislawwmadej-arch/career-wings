@@ -11,7 +11,7 @@ from anthropic import (
 
 load_dotenv()
 client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
-MODEL = "claude-3-haiku-20240307"
+MODEL = "claude-haiku-5"
 MAX_TOKENS = 200
 
 app = Flask(__name__)
